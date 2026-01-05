@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.gallery {
+    width: 100%;
+}
+
+.gallery img {
+    width: 25%;
+    cursor: pointer;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#lightbox img {
+    max-width: 80%;
+    margin-top: 10%;
+}
+
+#close {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    cursor: pointer;
+}
