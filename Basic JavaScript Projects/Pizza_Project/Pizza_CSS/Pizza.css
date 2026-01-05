@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #fff4e6;
+}
+
+.top-bar {
+    background: #f7941d;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar h1 {
+    margin: 0;
+}
+
+.top-bar nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.hero {
+    border: 4px dashed #f7941d;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+}
+
+.hero img {
+    width: 140px;
+}
+
+.hero-text h2 {
+    color: #b13c1e;
+    font-size: 36px;
+}
+
+.hero-text p {
+    color: #f7941d;
+    font-style: italic;
+}
+
+.section-title {
+    text-align: center;
+    color: #f7941d;
+    font-size: 28px;
+}
+
+.order-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+.card {
+    background: #b13c1e;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    text-align: center;
+    color: #ffd966;
+}
+
+.card label {
+    display: block;
+    margin: 6px 0;
+}
+
+.note {
+    font-size: 12px;
+    color: #ffd966;
+}
+
+.buttons {
+    text-align: center;
+    margin: 20px;
+}
+
+button {
+    padding: 10px 30px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cancel {
+    background: #ffd966;
+}
+
+.order {
+    background: #f7941d;
+    font-weight: bold;
+}
+
+.summary {
+    background: #b13c1e;
+    color: #fff;
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.summary h3 {
+    color: #ffd966;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+footer img {
+    width: 50px;
+    margin: 5px;
+}
