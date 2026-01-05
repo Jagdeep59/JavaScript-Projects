@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fantasy Pizza</title>
+    <link rel="stylesheet" href="Pizza_CSS/Pizza.css">
+</head>
+<body>
+
+<header class="top-bar">
+    <h1>Fantasy Pizza</h1>
+    <nav>
+        <a href="#">Order</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="pic1.png" alt="Unicorn">
+    <div class="hero-text">
+        <h2>Fantasy Pizza</h2>
+        <p>We have the most delicious pizza,<br>you'll think it's magical!</p>
+    </div>
+    <img src="pic2.png" alt="Dragon">
+</section>
+
+<h2 class="section-title">— Build Your Pizza —</h2>
+
+<section class="order-grid">
+
+    <div class="card">
+        <h3>Size</h3>
+        <label><input type="radio" class="size" name="size" value="Personal Pizza"> Personal - $6</label>
+        <label><input type="radio" class="size" name="size" value="Small Pizza"> Small - $8</label>
+        <label><input type="radio" class="size" name="size" value="Medium Pizza"> Medium - $10</label>
+        <label><input type="radio" class="size" name="size" value="Large Pizza"> Large - $14</label>
+        <label><input type="radio" class="size" name="size" value="Extra Large Pizza"> Extra Large - $16</label>
+    </div>
+
+    <div class="card">
+        <h3>Crust</h3>
+        <label><input type="checkbox" class="toppings" value="Regular Crust"> Regular</label>
+        <label><input type="checkbox" class="toppings" value="Garlic Butter Crust"> Garlic Butter</label>
+        <label><input type="checkbox" class="toppings" value="Cheese Stuffed Crust"> Cheese Stuffed</label>
+        <label><input type="checkbox" class="toppings" value="Spicy Crust"> Spicy</label>
+        <label><input type="checkbox" class="toppings" value="House Special Crust"> House Special</label>
+    </div>
+
+    <div class="card">
+        <h3>Sauce</h3>
+        <label><input type="checkbox" class="toppings" value="Marinara Sauce"> Marinara</label>
+        <label><input type="checkbox" class="toppings" value="White Sauce"> White Sauce</label>
+        <label><input type="checkbox" class="toppings" value="BBQ Sauce"> BBQ Sauce</label>
+        <label><input type="checkbox" class="toppings" value="No Sauce"> No Sauce</label>
+    </div>
+
+    <div class="card">
+        <h3>Cheese</h3>
+        <label><input type="checkbox" class="toppings" value="Regular Cheese"> Regular</label>
+        <label><input type="checkbox" class="toppings" value="Extra Cheese"> Extra Cheese</label>
+        <label><input type="checkbox" class="toppings" value="No Cheese"> No Cheese</label>
+    </div>
+
+    <div class="card">
+        <h3>Veggies</h3>
+        <label><input type="checkbox" class="toppings" value="Tomatoes"> Tomatoes</label>
+        <label><input type="checkbox" class="toppings" value="Onions"> Onions</label>
+        <label><input type="checkbox" class="toppings" value="Olives"> Olives</label>
+        <label><input type="checkbox" class="toppings" value="Green Peppers"> Green Peppers</label>
+        <label><input type="checkbox" class="toppings" value="Mushrooms"> Mushrooms</label>
+        <label><input type="checkbox" class="toppings" value="Spinach"> Spinach</label>
+        <label><input type="checkbox" class="toppings" value="Jalapeño"> Jalapeño</label>
+        <p class="note">First topping free, +$1 each after</p>
+    </div>
+
+    <div class="card">
+        <h3>Meat</h3>
+        <label><input type="checkbox" class="toppings" value="Pepperoni"> Pepperoni</label>
+        <label><input type="checkbox" class="toppings" value="Sausage"> Sausage</label>
+        <label><input type="checkbox" class="toppings" value="Canadian Bacon"> Canadian Bacon</label>
+        <label><input type="checkbox" class="toppings" value="Ground Beef"> Ground Beef</label>
+        <label><input type="checkbox" class="toppings" value="Chicken"> Chicken</label>
+        <label><input type="checkbox" class="toppings" value="Anchovy"> Anchovy</label>
+    </div>
+
+</section>
+
+<div class="buttons">
+    <button class="cancel" onclick="location.reload()">Cancel</button>
+    <button class="order" onclick="getReceipt()">Place Order</button>
+</div>
+
+<section class="summary">
+    <div id="showText"></div>
+    <div id="totalPrice"></div>
+</section>
+
+<footer>
+    <img src="pic3.png" alt="Pizza">
+    <img src="pic4.png" alt="Mascot">
+    <p>© Fantasy Pizza 2026</p>
+</footer>
+
+<script src="Pizza_JavaScript/Pizza.js"></script>
+</body>
+</html>
