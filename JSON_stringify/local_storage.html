@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+    <h2>localStorage Example</h2>
+
+    <p id="myDog"></p>
+
+    <script>
+        localStorage.setItem("Name", "Dax");
+
+        document.getElementById("myDog").innerHTML =
+            localStorage.getItem("Name");
+    </script>
+
+</body>
+</html>
