@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>getElementsByClassName</title>
+    <link rel="stylesheet" href="CSS/CSS_1.css" />
+  </head>
+  <body>
+    <h1 class="Click">This text will change!</h1>
+    <h3 class="Click">This text will not change.</h3>
+
+    <button onclick="HelloWorld_Function()">Click me!</button>
+
+    <canvas
+      id="myCanvas"
+      width="500"
+      height="250"
+      style="border: 5px solid black"
+    ></canvas>
+
+    <h2>Contact Us</h2>
+
+    <form name="contactForm" onsubmit="return validateForm()">
+      <label>Name:</label><br />
+      <input type="text" name="name" /><br /><br />
+
+      <label>Email:</label><br />
+      <input type="text" name="email" /><br /><br />
+
+      <label>Message:</label><br />
+      <textarea name="message"></textarea><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script src="JS/JavaScript_2.js"></script>
+  </body>
+</html>
