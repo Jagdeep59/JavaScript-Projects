@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Challenge</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <style>
+        .body{
+            background-color: rgb(255, 5, 5);
+        }
+    </style>
+</head>
+
+<body class="body">
+
+<h1>jQuery Challenge</h1>
+<p id="clickMe">Click this paragraph to see an effect.</p>
+
+<script>
+$(document).ready(function () {
+
+    $("#clickMe").click(function () {
+        $(this).fadeOut();
+    });
+
+});
+</script>
+
+</body>
+</html>
