@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Double Click Example</title>
+</head>
+<body>
+
+    <h2>Ondblclick Event Example</h2>
+
+    <p id="myParagraph" ondblclick="changeText()">Double click this paragraph to change its text and color!</p>
+
+    <script>
+        function changeText() {
+            var para = document.getElementById("myParagraph");
+            para.style.color = "blue";
+            para.innerHTML = "You double-clicked me! ";
+        }
+    </script>
+
+</body>
+</html>
